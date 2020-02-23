@@ -1,0 +1,27 @@
+------------- -------
+Click         7.0    
+Flask         1.1.1  
+Flask-Cors    3.0.8  
+itsdangerous  1.1.0  
+Jinja2        2.11.1 
+MarkupSafe    1.1.1  
+pip           18.1   
+pkg-resources 0.0.0  
+setuptools    40.8.0 
+six           1.14.0 
+Werkzeug      1.0.0  
+wheel 
+
+NPM:
+npm install vue
+npm i -g @vue/cli
+npm install axios@0.18.0 --save
+npm install bootstrap@4.3.1 --save
+
+Explanation:
+main.js	app entry point, which loads and initializes Vue along with the root component
+App.vue	Root component, which is the starting point from which all other components will be rendered
+"components"	where UI components are stored
+router.js	where URLS are defined and mapped to components
+"views"	where UI components that are tied to the router are stored
+"assets"	where static assets, like images and fonts, are stored

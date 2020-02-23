@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <div id="root" class="container">
+        {{ greeting }}
+      <div class="row">
+        <div class="col-md-4" v-if="greeting == 'hi'"><!--not show the element at all-->
+           Voce disse oi
+      </div>
+      <div class="col-md-4" v-else-if="greeting == 'hello'">
+            Voce disse hello
+      </div>
+      <div class="col-md-4" v-else>
+            Voce nao disse nada
+      </div>
+      <div v-show="greeting == 'nada'"> <!--display none, still there.-->
+        nada mesmo
+      </div>
+    </div>
+      <!--binding the input to greeting variable-->
+      <!--directory-->
+      <input v-model="greeting">
+    </div>
+  <script type="text/javascript" src="./vue.min.js"></script>
+  <script type="text/javascript" src="./vue.js"></script>
+  </body>
+</html>
